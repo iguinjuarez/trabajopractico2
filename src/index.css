@@ -1,0 +1,230 @@
+body {
+  height: 100%;
+  margin: 0;
+  line-height: 1.5;
+  color: #121212;
+}
+
+h1{
+  color: #581882;
+}
+a{
+  text-decoration: none;
+}
+
+.layout{
+  margin:0;
+  height: 100%;
+  display: flex;
+}
+
+.sidebar-layout {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: darkturquoise;
+  padding-left: 20px;
+  box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+}
+.sidebar a {
+  display: block;
+  padding-left: 10px;
+  text-decoration: none;
+  color: black;
+}
+.sidebar a.selected {
+  background-color: white;
+  padding: 0px 0px 0px 10px;
+  font-weight: 700;
+}
+
+.sidebar a:hover {
+  background-color: paleturquoise;
+}
+.head-title {
+  flex: 1;
+  padding: 0px 20px 0px;
+  box-shadow: 0px 1px 2px -1px rgba(0, 0, 0, 0.75);
+}
+.head-nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px 0px;
+  box-shadow: 0px 1px 2px -1px rgba(0, 0, 0, 0.75);
+}
+.row-items {
+  display: flex;
+  padding: 5px 20px 0px 0px;
+  justify-content: end;
+}
+
+.card {
+  background-color: white;
+  padding: 20px 0px;
+  margin: 20px 0px;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.75);
+  text-align: center;
+}
+button {
+  cursor: pointer;
+}
+.button-nav-add {
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.75);
+  background-color: darkturquoise;
+  color: white;
+  padding: 7px;
+  border-radius: 4px;
+  border : none;
+}
+.button-nav-back {
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.75);
+  background-color: red;
+  color: white;
+  padding: 7px;
+  border-radius: 4px;
+  border : none;
+}
+
+.body-student {
+  display: flex;
+  padding: 20px 20px 5px 20px;
+  
+}
+.page-student {
+  flex: 1;
+}
+
+input {
+  width: 50%;
+  align-content: end;
+}
+.input-full {
+  width: 100%;
+}
+.table-student {
+  padding: 0px 20px 0px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #7a7a7a;
+}
+table, th, td {
+  border: 1px solid #7a7a7a;
+}
+.pagination {
+  display: flex;
+  padding: 0px 0px 0px 5px;
+  justify-content: flex-end;
+  align-items: center;
+}
+.pagination button {
+  border: none;
+}
+.pagination button:hover {
+  color: white;
+  background-color: green;
+}
+
+.pagination button.active {
+  color: white;
+  background-color: green;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 20px 20px 0px 20px;    background: #fff;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.75);
+}
+.form-add {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0px 0px 20px;
+}
+
+#root {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+#detail {
+  flex: 1; /* Ocupa el espacio restante */
+  padding: 0px 20px;
+  overflow-y: auto; /* Para hacer scroll si el contenido es más grande que la pantalla */
+  box-sizing: border-box;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: 1;
+}
+
+.button {
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 7px;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.75);
+  color: white;
+  background-color: darkturquoise;
+  text-align: right;
+}
+
+.button-back {
+  background-color: red;
+  color: white;
+}
+
+.button-search {
+  border: none;
+  cursor: pointer;
+}
+
+form.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  padding: 10px;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.75);
+}
+
+.grid .grid-item {
+  padding: 10px;
+}
+
+input {
+  width: 100%;
+}
+
+.pagination {
+  display: flex;
+  justify-content: end;
+  align-items: stretch;
+  margin-top: 10px;
+}
+
+.pagination #itemsPerPage {
+  margin-right: 5px;
+}
+
+.pagination #paginationControl button.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.search {
+  display: flex;
+  margin-bottom: 5px;
+}
