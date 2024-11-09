@@ -204,10 +204,6 @@ form.grid {
   padding: 10px;
 }
 
-input {
-  width: 100%;
-}
-
 .pagination {
   display: flex;
   justify-content: end;
