@@ -1,11 +1,12 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 import { useForm } from 'react-hook-form';
 
 export default function NewAlumn() {
   const navigate = useNavigate();
   const { register, handleSubmit, formState: { errors } } = useForm();
   const onSubmit = (data) => {
-    alert(`Formulario enviado: ${JSON.stringify(data)}`);
+    alert(`Alumno agregado`);
+    navigate('/alumnos');
   };
 
   return (
